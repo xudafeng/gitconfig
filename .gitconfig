@@ -2,16 +2,16 @@
 	name = xudafeng
 	email = xudafeng@126.com
 [core]
-  excludesfile = /Users/xdf/.gitignore_global
+  excludesfile = ~/.gitignore_global
   editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
 [color]
-  ui = auto
+	ui = true
 [alias]
 	alias = "!f(){ git config -l | grep alias; };f"
 	st = status --short --branch
